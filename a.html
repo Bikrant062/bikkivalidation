@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Handling - JavaScript</title>
+    <script src="b.js"></script>
+</head>
+<body>
+    <h2>Form Handling with JavaScript</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+        <p>
+            <label for="txtname">Name:</label>
+            <input type="text" id="txtname" name="bikrant_name" required />
+        </p>
+        <p>
+            <label for="txtemail">Email:</label>
+            <input type="email" id="txtemail" name="bikrant_email" required />
+        </p>
+        <p>
+            <label for="txtcontact">Contact:</label>
+            <input type="tel" id="txtcontact" name="bikrant_contact" pattern="[0-9]{10}" required />
+        </p>
+        <p>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="bikrant_gender" value="Male" required /> Male
+            <input type="radio" id="female" name="bikrant_gender" value="Female" required /> Female
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="bikrant_password" required />
+        </p>
+        <p>
+            <label for="course">Course:</label>
+            <select id="course" name="bikrant_course" required>
+                <option value="">Select Course</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+                <option value="Commerce">Commerce</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+    </form>
+    <p id="errorMsg" style="color: red;"></p>
+</body>
+</html>
